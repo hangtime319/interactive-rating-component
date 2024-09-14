@@ -79,9 +79,10 @@ button {
   justify-content: space-between;
   margin: 1.2em auto;
   width: 100%;
+  border: none;
 }
 
-button[type=button] {
+button[type=radio] {
   background-color: var(--dark-blue-rating);
   color: var(--light-grey);
   font-family: "Overpass", sans-serif;
@@ -90,7 +91,7 @@ button[type=button] {
   border-radius: 50%;
 }
 
-button[type=button]:hover {
+button[type=radio]:hover {
   background-color: var(--orange);
   color: var(--dark-blue);
 }
@@ -138,7 +139,7 @@ button[type=button]:hover {
   margin-bottom: 0.4em;
 }
 
-button[type=button].active {
+button[type=radio].active {
   background-color: var(--white);
   color: var(--dark-blue);
 }

@@ -42,22 +42,50 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <nav id="rating" role="navigation" aria-label="Choose a rating">
-          <button data-message="Rating 1" type="button" value="1">1</button>
-          <button data-message="Rating 2" type="button" value="2">2</button>
-          <button data-message="Rating 3" type="button" value="3">3</button>
-          <button data-message="Rating 4" type="button" value="4">4</button>
-          <button data-message="Rating 5" type="button" value="5">5</button>
-        </nav>
+        <fieldset role="radiogroup" aria-labelledby="rating-label" id="rating">
+          <button
+            type="radio"
+            value="1"
+            aria-labelledby="rating-label rating-message-1"
+          >
+            1
+          </button>
+          <button
+            type="radio"
+            value="2"
+            aria-labelledby="rating-label rating-message-2"
+          >
+            2
+          </button>
+          <button
+            type="radio"
+            value="3"
+            aria-labelledby="rating-label rating-message-3"
+          >
+            3
+          </button>
+          <button
+            type="radio"
+            value="4"
+            aria-labelledby="rating-label rating-message-4"
+          >
+            4
+          </button>
+          <button
+            type="radio"
+            value="5"
+            aria-labelledby="rating-label rating-message-5"
+          >
+            5
+          </button>
+        </fieldset>
 
-        <button role="Submit" class="submit" type="submit">
-          Submit
-        </button>
+        <button class="submit" type="submit">Submit</button>
       </section>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <section class="content thanks display-none">
+      <section class="content thanks display-none" aria-live="polite">
         <img
           class="img-thanks"
           src="images/illustration-thank-you.svg"

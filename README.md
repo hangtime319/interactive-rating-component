@@ -33,4 +33,4 @@ Este projeto é um componente interativo de avaliação, desenvolvido em HTML, C
 2. Clique no botão "Submit" para enviar o feedback.
 
 **URL do projeto
-1. https://hangtime319.github.io/interactive-rating-component/
+1. [LINK DO PROJETO](https://hangtime319.github.io/interactive-rating-component/)

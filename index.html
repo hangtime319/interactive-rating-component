@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Rating state start -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  How did we do?
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Rating state start -->
+      <section class="content" id="content-rating">
+        <img
+          class="icon-star"
+          src="images/icon-star.svg"
+          alt="Icon of orange star"
+        />
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <h1>How did we do?</h1>
 
-  1 2 3 4 5
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
-  Submit
+        <nav id="rating" role="navigation" aria-label="Choose a rating">
+          <button data-message="Rating 1" type="button" value="1">1</button>
+          <button data-message="Rating 2" type="button" value="2">2</button>
+          <button data-message="Rating 3" type="button" value="3">3</button>
+          <button data-message="Rating 4" type="button" value="4">4</button>
+          <button data-message="Rating 5" type="button" value="5">5</button>
+        </nav>
 
-  <!-- Rating state end -->
+        <button role="Submit" class="submit" type="submit">
+          Submit
+        </button>
+      </section>
+      <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+      <!-- Thank you state start -->
+      <section class="content thanks display-none">
+        <img
+          class="img-thanks"
+          src="images/illustration-thank-you.svg"
+          alt="A cellphone with orange card, papernote and orange circle."
+        />
 
-  You selected <!-- Add rating here --> out of 5
+        <p class="message-rating">
+          You selected
+          <span id="rating-choiced"><!-- Add rating here --></span> out of 5
+        </p>
 
-  Thank you!
+        <h2>Thank you!</h2>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </main>
 
-  <!-- Thank you state end -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/hangtime319"
+        target="_blank"
+        >Leonardo Amaral</a
+      >.
+    </footer>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,157 @@
+/* VARIABLES - COLORS */
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-rating: rgb(47, 51, 56);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* GENERAL */
+body {
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+h1, h2 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+P {
+  color: var(--light-grey);
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+/* RATING STATE */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--dark-blue);
+  border-radius: 12px;
+  padding: 1.5em;
+  width: 23em;
+}
+
+.icon-star {
+  margin-bottom: 1.6em;
+  padding: 0.8em;
+  background-color: var(--dark-blue-rating);
+  border-radius: 50%;
+}
+
+.content h1 {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+#rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em auto;
+  width: 100%;
+}
+
+button[type=button] {
+  background-color: var(--dark-blue-rating);
+  color: var(--light-grey);
+  font-family: "Overpass", sans-serif;
+  padding: 1em 1.3em;
+  border: none;
+  border-radius: 50%;
+}
+
+button[type=button]:hover {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}
+
+.submit {
+  width: 100%;
+  background-color: var(--orange);
+  padding: 1em 0;
+  margin-top: 0.5em;
+  border-radius: 20px;
+  border: none;
+  color: var(--dark-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;  
+}
+
+.submit:hover {
+  background-color: var(--white);
+}
+
+/* CARD - THANK YOU */
+.thanks {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.img-thanks {
+  max-width: 45%;
+  margin: 0.5em auto 1.3em auto;
+}
+
+.message-rating {
+  background-color: var(--dark-blue-rating);
+  color: var(--orange);
+  padding: 0.3em 1.5em;
+  border-radius: 12px;
+  margin: 0.5em 0 1.8em 0;
+}
+
+.content h2 {
+  margin-bottom: 0.4em;
+}
+
+button[type=button].active {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.display-none {
+    display: none;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
